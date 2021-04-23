@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:circular_menu/circular_menu.dart';
 
@@ -40,6 +42,8 @@ class _MyAppState extends State<MyApp> {
             ),
           ),
           toggleButtonColor: Colors.pink,
+          startingAngleInRadian: 1.22 * pi,
+          endingAngleInRadian: 1.78355 * pi,
           items: [
             CircularMenuItem(
                 icon: Icons.home,
